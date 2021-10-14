@@ -7,6 +7,7 @@
         :loading="loading"
         :label="label"
         :value="formattedDatetime"
+        :outlined="outlined"
         v-on="on"
         readonly
       >
@@ -87,6 +88,10 @@ export default {
     label: {
       type: String,
       default: ''
+    },
+    outlined: {
+      type: Boolean,
+      default: false
     },
     dialogWidth: {
       type: Number,
