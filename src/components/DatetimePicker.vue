@@ -150,7 +150,7 @@ export default {
         if (this.time.length === 5) {
           datetimeString += ':00'
         }
-        return parse(datetimeString, this.defaultDateTimeFormat, new Date())
+        return datetimeString
       } else {
         return null
       }
